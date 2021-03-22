@@ -103,7 +103,7 @@ int main()
 
 	
 
-	MasterRenderer* Karlson;   //yes i fucking named the master renderer karlson wow im such a leech shut up dont take this out of context pls now frick off
+	MasterRenderer* Karlson;   
 	Karlson = Level1.buildLevelFromFile("resources/level3.txt");
 
 	LiquidBody* water = new LiquidBody();
