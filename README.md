@@ -2,30 +2,35 @@
 
 ## Overview
 
-Welcome to the culmination of advanced graphics programming—an OpenGL project that not only showcases a robust Image Based Lighting (IBL) Physically Based Rendering (PBR) engine but also integrates a sophisticated terrain renderer, a versatile postprocessor, and a compelling game designed to highlight the engine's capabilities.
+This an OpenGL project I created during High School that showcases an Image Based Lighting (IBL) and Physically Based Rendering engine using the Cook Torrance BRDF implementation following closely LearnOpengl and Sébastien Lagarde's "Moving Frostbite to PBR" paper from SIGGRAPH 2014. Also features a Bullet Physics integration that is used to simulate a rigid body simulation of the created entities in the scene. Post processor which can be used to create complex post-processing effects, however here I only use it to tone map the render to ACES colorspace and a terrain generator/renderer.
+Finally, I created a small sample game to showcase all the features of the engine.
 
-## Physically Based Rendering (PBR) Implementation
-
-The PBR aspect of the engine is implemented through the Cook-Torrance BRDF model, providing a realistic simulation of light-material interaction. Image Based Lighting (IBL) using HDR cubemaps enhances the rendering of various materials, including metallic and diffuse. The implementation draws inspiration from the frostbite graphics paper, ensuring a high-fidelity representation.
+Other Additions - 
 
 ## Terrain Renderer
 
-Dynamically generating vertex points at runtime, the terrain renderer creates a dynamic landscape with texture and normal coordinates calculated on-the-fly. Utilizing Perlin noise, Simplex noise, and other noise functions, the terrain's elevation is crafted, adding intricate details and dimension.
+Dynamically generating vertex points at runtime, the terrain renderer creates a dynamic landscape with texture and normal coordinates calculated on the fly. Utilizing Perlin noise, Simplex noise, and other noise functions, the terrain's elevation is crafted, adding details and dimension.
 
-## Postprocessor
+## Particle System 
 
-The postprocessor introduces a layer of visual enhancement, offering the flexibility to implement various effects. In this iteration, the focus is on tonemapping to the ACESfilm color space, contributing to a cinematic and vibrant display.
+A simple particle system that can animate particle scale, rotation, and translation, with different kinds of emitters.  
 
 ## Game Showcase
 
-As a testament to the engine's capabilities, a small shooter game has been created. This game features:
 - **Dynamic Player Controller:** The player is equipped with a dynamic controller, offering smooth and responsive movement.
 - **Weapon System:** A simple yet effective weapon system utilizes the Bullet Physics engine to shoot projectiles, and the particle system adds visual flair to the shooting experience.
 - **Level Design:** The game environment is loaded through the glTF format, showcasing the engine's ability to handle complex 3D models.
 - **Shader Techniques:** The level is shaded using point lights, emphasizing realistic lighting effects. Image Based Lighting (IBL) is seamlessly integrated, leveraging an HDR skybox to enhance the overall visual experience.
 
+
 ## Disclaimer
 
-While the project's code structure may initially reflect Java-like practices, ongoing iterations actively address these issues, aligning the codebase with industry-standard C++ practices. For comprehensive details on implementation and usage, refer to the provided documentation. Dive into the source code, experiment with the features, and enjoy the immersive world this engine and game combination have to offer.
+During my high school years, as I was learning to code, this project's codebase leaned heavily towards Java-like practices, lacking adherence to proper C++ standards. Raw pointers were used extensively without due consideration for memory management, resembling Java objects rather than proper C++ usage. Fundamental principles such as polymorphism and inheritance were not adequately implemented.
+This inclination towards Java-style programming can be attributed to my concurrent learning of Java during that period, inadvertently influencing my approach to C++.
+It's essential to note that this code lacks recommended and advanced C++ programming practices, potentially leading to memory leaks.
 
-Happy coding and gaming!
+Since this project, I've significantly improved my coding practices in the ongoing iteration of this engine. The updated version adheres more closely to C++ standards, minimizes memory leaks, and implements better practices related to abstraction.
+
+For a more advanced and compliant implementation, please explore the ongoing iteration of this engine, where the documentation provides insights into enhanced practices and increased adherence to C++ principles.
+
+Thank you for your understanding, and feel free to explore the project to witness the progression in coding practices over time.
