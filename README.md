@@ -25,12 +25,11 @@ A simple particle system that can animate particle scale, rotation, and translat
 
 ## Disclaimer
 
-During my high school years, as I was learning to code, this project's codebase leaned heavily towards Java-like practices, lacking adherence to proper C++ standards. Raw pointers were used extensively without due consideration for memory management, resembling Java objects rather than proper C++ usage. Fundamental principles such as polymorphism and inheritance were not adequately implemented.
+I made this project during High School when I was still learning to code, this project's codebase leaned heavily towards very naive Java-like practices, lacking adherence to proper C++ standards. Raw pointers were used extensively without due consideration for memory management, resembling Java objects rather than proper C++ usage. Fundamental principles such as polymorphism and inheritance were not adequately implemented, if at all.
 This inclination towards Java-style programming can be attributed to my concurrent learning of Java during that period, inadvertently influencing my approach to C++.
-It's essential to note that this code lacks recommended and advanced C++ programming practices, potentially leading to memory leaks.
+It's essential to note that this code lacks recommended and advanced programming practices, potentially leading to memory leaks and unoptimized code which may be messy.
 
-Since this project, I've significantly improved my coding practices in the ongoing iteration of this engine. The updated version adheres more closely to C++ standards, minimizes memory leaks, and implements better practices related to abstraction.
+Since this project, I've significantly improved my coding practices in the ongoing iterations of such engines. The updated version adheres more closely to industry standards in C++ and programming in general, minimizes memory leaks, and implements better practices related to abstraction.
 
-For a more advanced and compliant implementation, please explore the ongoing iteration of this engine, where the documentation provides insights into enhanced practices and increased adherence to C++ principles.
 
 Thank you for your understanding, and feel free to explore the project to witness the progression in coding practices over time.
