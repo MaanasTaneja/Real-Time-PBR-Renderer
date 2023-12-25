@@ -1,4 +1,4 @@
-# OpenGL Project - PBR Engine with Image Based Lighting
+# Real Time Physically Based Renderer with an IBL Pipeline. 
 
 ## Overview
 
