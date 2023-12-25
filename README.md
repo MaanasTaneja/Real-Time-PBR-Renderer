@@ -1,5 +1,5 @@
 # Real Time Physically Based Renderer with an IBL Pipeline. 
-![Engine Showcase]("engine.png")
+![Engine Showcase]("engine.PNG")
 ## Overview
 
 This an OpenGL project I created during High School that showcases an Image Based Lighting (IBL) and Physically Based Rendering engine using the Cook Torrance BRDF implementation following closely LearnOpengl and Sébastien Lagarde's "Moving Frostbite to PBR" paper from SIGGRAPH 2014. Also features a Bullet Physics integration that is used to simulate a rigid body simulation of the created entities in the scene. Post processor which can be used to create complex post-processing effects, however here I only use it to tone map the render to ACES colorspace and a terrain generator/renderer.
