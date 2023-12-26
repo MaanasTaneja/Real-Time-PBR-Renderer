@@ -1,5 +1,5 @@
 # Real Time Physically Based Renderer with an IBL Pipeline. 
-![Engine Showcase](engine.PNG)
+![Engine Showcase](pbr3.PNG)
 ## Overview
 
 This an OpenGL project I created during High School that showcases an Image Based Lighting (IBL) and Physically Based Rendering engine using the Cook Torrance BRDF implementation following closely LearnOpengl and Sébastien Lagarde's "Moving Frostbite to PBR" paper from SIGGRAPH 2014. Also features a Bullet Physics integration that is used to simulate a rigid body simulation of the created entities in the scene. Post processor which can be used to create complex post-processing effects, however here I only use it to tone map the render to ACES colorspace and a terrain generator/renderer.
@@ -8,6 +8,7 @@ Finally, I created a small sample game to showcase all the features of the engin
 Other Additions - 
 
 ## Terrain Renderer
+![Engine Showcase](terrain2.PNG)
 
 Dynamically generating vertex points at runtime, the terrain renderer creates a dynamic landscape with texture and normal coordinates calculated on the fly. Utilizing Perlin noise, Simplex noise, and other noise functions, the terrain's elevation is crafted, adding details and dimension.
 
@@ -16,12 +17,14 @@ Dynamically generating vertex points at runtime, the terrain renderer creates a 
 A simple particle system that can animate particle scale, rotation, and translation, with different kinds of emitters.  
 
 ## Game Showcase
+![Engine Showcase](engine.PNG)
 
 - **Dynamic Player Controller:** The player is equipped with a dynamic controller, offering smooth and responsive movement.
 - **Weapon System:** A simple yet effective weapon system utilizes the Bullet Physics engine to shoot projectiles, and the particle system adds visual flair to the shooting experience.
 - **Level Design:** The game environment is loaded through the glTF format, showcasing the engine's ability to handle complex 3D models.
 - **Shader Techniques:** The level is shaded using point lights, emphasizing realistic lighting effects. Image Based Lighting (IBL) is seamlessly integrated, leveraging an HDR skybox to enhance the overall visual experience.
 
+![Engine Showcase](pbr2.PNG)
 
 ## Disclaimer
 
